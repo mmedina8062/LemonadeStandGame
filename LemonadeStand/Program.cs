@@ -12,6 +12,11 @@ namespace LemonadeStand
         {
             LemonadeGame lemonadeGame = new LemonadeGame();
             lemonadeGame.GameRules();
+
+            Player player = new Player();
+            Console.WriteLine("Money: " + player.StartingAmount);
+            Console.ReadLine();
+            
         }
     }
 }
