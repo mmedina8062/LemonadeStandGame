@@ -22,12 +22,17 @@ namespace LemonadeStand
         public Inventory()
         {
             this.Lemon = 0;
+            this.Sugar = 0;
+            this.Cups = 0;
+            this.IceCubes = 0;
 
         }
 
-        public string PlayerInventory(int Lemon, int Sugar, int Cups, int IceCubes)
+        public void PlayerInventory(int Lemon, int Sugar, int Cups, int IceCubes)
         {
             //string[] PlayerInventory = new string[4] { "Lemon", "Sugar", "Cups", "Ice Cubes" };
+            if (Lemon = )
+            
             
         }
     }
