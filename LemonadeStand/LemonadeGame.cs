@@ -7,8 +7,10 @@ namespace LemonadeStand
 {
     public class LemonadeGame
     {
-        int Player;
-        string Store;
+        // int player;
+        Player player;
+        Store store;
+        // string Store;
         string DisplayGameRules;
 
         

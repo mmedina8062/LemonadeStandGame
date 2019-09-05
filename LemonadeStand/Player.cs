@@ -12,6 +12,9 @@ namespace LemonadeStand
         int PriceForLemonade;
         //TODO: calculator to add money made from sales and incorporate that to add with StartingAmount
         int IngridentsControl;
+        public int startingAmount;
+        public Inventory inventory;        
+        
 
 
         public LemonadeGame LemonadeGame
@@ -29,16 +32,18 @@ namespace LemonadeStand
 
         }
 
-        public void StartingAmount()
+        public int StartingAmount()
         {
-            string PlayerStartingAmount = 25.ToString("C");
+            string StartingAmount = 25.ToString("C");
+
+            return startingAmount;
             
         }
 
-        public void PlayerInventory(Inventory.PlayerInventory)
+        public void AccessPlayerInventory()
         {
-         
-            
+
+            //Console.WriteLine(Inventory.PlayerInventory);
             
         }
 

@@ -11,6 +11,9 @@ namespace LemonadeStand
         public int Sugar;
         public int Cups;
         public int IceCubes;
+        
+        
+
         public Player Player
         {
             get => default;
@@ -27,13 +30,15 @@ namespace LemonadeStand
             this.IceCubes = 0;
 
         }
-
-        public void PlayerInventory(int Lemon, int Sugar, int Cups, int IceCubes)
-        {
+        //public int PlayerInventory(int Lemon, int Sugar, int Cups, int IceCubes)
+        //{
+            //create a list and add int to it?
             //string[] PlayerInventory = new string[4] { "Lemon", "Sugar", "Cups", "Ice Cubes" };
-            if (Lemon = )
+            //Console.WriteLine(Lemon += );
+       
             
             
-        }
+            
+        
     }
 }

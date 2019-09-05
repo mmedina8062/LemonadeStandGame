@@ -7,7 +7,7 @@ namespace LemonadeStand
 {
     public class Store
     {
-        public string Lemons;
+        public int Lemons;
         public int Sugar;
         public int Cups;
         public int IceCubes;
@@ -28,23 +28,39 @@ namespace LemonadeStand
              
         }
 
-        public void StoreItems()
+        public int StoreItems(Player player)
         {
             Console.WriteLine("Please choose which ingrident you like to purchase: (Lemons, Sugar, Cups, or Ice Cubes)");
             string UserInput = Console.ReadLine();
 
             switch (UserInput)
-            {
+            {    
                 case "Lemons":
-                    int BuyLemons = Store.PriceOfItems;
+                    GetBuyLemons(player);
+                    //player.AccessPlayerInventory();
+                    player.inventory.Lemon += 10;
+                    break;
+                case "Sugar":
+                    GetBuySugar(player);
+                    //Player.AccessPlayerInventory();
+                    player.inventory.Sugar += 20;
+                    break;
+                    
+                case "Cups":
                     break;
 
+                case "Ice Cubes":
+                    break;
+                    
+
             }
-          //TODO: create day  
+
+            return (int)Lemons; 
+            //TODO: create day  
 
         }
 
-        public int PriceOfItems()
+        public int GetBuyLemons(Player player)
         {
             
             Console.WriteLine("Choose amount of Lemons to purchase: 10 = $1, 40 = $2, 65 = $3");
@@ -52,13 +68,28 @@ namespace LemonadeStand
 
             if (UserInput == "")
             {
-                int AmountOfMoneyLeft = SubtractTwoNumbers(Player.StartingAmount, UserInput);
+                
+                int AmountOfMoneyLeft = player.startingAmount - int.Parse(UserInput);
+
+                Console.WriteLine(AmountOfMoneyLeft);               
+            }
+            return Convert.ToInt32(UserInput);
+
+        }
+
+        public void GetBuySugar(Player player)
+        {
+            Console.WriteLine("Choose amount of Sugar to purchase: 20 lbs = $1.50, 45 lbs = $2.50, 75 lbs = $3.50");
+            string UserInput = Console.ReadLine();
+
+            if (UserInput == "")
+            {
+                int AmountOfMoneyLeft = player.startingAmount - int.Parse(UserInput);
 
                 Console.WriteLine(AmountOfMoneyLeft);
-
             }
         }
-        
+       
 
         
     }

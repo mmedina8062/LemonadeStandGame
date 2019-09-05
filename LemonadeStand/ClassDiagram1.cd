@@ -3,29 +3,9 @@
   <Class Name="LemonadeStand.LemonadeGame">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAAAAAAAAAA=</HashCode>
       <FileName>LemonadeGame.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="LemonadeStand.Player">
-    <Position X="6.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAgAAAAAAAAAAAAAAACAQAAAgAAAAAA=</HashCode>
-      <FileName>Player.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="LemonadeGame" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="LemonadeStand.Inventory">
-    <Position X="8.25" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
-      <FileName>Inventory.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Player" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="LemonadeStand.Customer">
     <Position X="0.5" Y="2" Width="1.5" />
@@ -58,13 +38,33 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="LemonadeStand.Store">
-    <Position X="4.75" Y="2.5" Width="1.5" />
+    <Position X="6.5" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQACIAAAIAAAAAAAAAAAAAAAAAAABCAAAAAAQAAEAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="LemonadeGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LemonadeStand.Player">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACBAAAAAAAAgAAAAAAAAAAABAAACCQAAAAACAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LemonadeGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LemonadeStand.Inventory">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAA=</HashCode>
+      <FileName>Inventory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
