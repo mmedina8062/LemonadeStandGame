@@ -7,7 +7,7 @@ namespace LemonadeStand
 {
     public class Inventory
     {
-        public int Lemon;
+        public int Lemons;
         public int Sugar;
         public int Cups;
         public int IceCubes;
@@ -22,12 +22,12 @@ namespace LemonadeStand
             }
         }
 
-        public Inventory()
+        public Inventory(Store store)
         {
-            this.Lemon = 0;
-            this.Sugar = 0;
-            this.Cups = 0;
-            this.IceCubes = 0;
+            this.Lemons = 0 + store.Lemons;
+            this.Sugar = 0 + store.Sugar;
+            this.Cups = 0 + store.Cups;
+            this.IceCubes = 0 + store.IceCubes;
 
         }
         //public int PlayerInventory(int Lemon, int Sugar, int Cups, int IceCubes)
@@ -36,6 +36,10 @@ namespace LemonadeStand
             //string[] PlayerInventory = new string[4] { "Lemon", "Sugar", "Cups", "Ice Cubes" };
             //Console.WriteLine(Lemon += );
        
+       //public int BoughtInventory(Player inventory)
+        //{
+            
+        //}
             
             
             
