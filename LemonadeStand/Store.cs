@@ -73,7 +73,8 @@ namespace LemonadeStand
 
                 Console.WriteLine(AmountOfMoneyLeft);               
             }
-            return Convert.ToInt32(UserInput);
+            Console.WriteLine();
+            return Lemons;
 
         }
 
@@ -88,7 +89,7 @@ namespace LemonadeStand
 
                 Console.WriteLine(AmountOfMoneyLeft);
             }
-            return Convert.ToInt32(UserInput);
+            return Sugar;
         }
 
         public int GetBuyCups(Player player)
@@ -102,12 +103,12 @@ namespace LemonadeStand
 
                 Console.WriteLine(AmountOfMoneyLeft);
             }
-            return Convert.ToInt32(UserInput);
+            return Cups;
         }
 
         public int GetBuyIceCubes(Player player)
         {
-            Console.WriteLine("Choose amount of Cups to purchase: 100 ice cubes = $2, 250 ice cubes = $3, 450 ice cubes = $4");
+            Console.WriteLine("Choose amount of Ice Cubes to purchase: 100 ice cubes = $2, 250 ice cubes = $3, 450 ice cubes = $4");
             string UserInput = Console.ReadLine();
 
             if (UserInput == "")
@@ -116,7 +117,7 @@ namespace LemonadeStand
 
                 Console.WriteLine(AmountOfMoneyLeft);
             }
-            return Convert.ToInt32(UserInput);
+            return IceCubes;
         }
        
 

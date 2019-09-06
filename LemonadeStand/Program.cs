@@ -11,20 +11,27 @@ namespace LemonadeStand
         static void Main(string[] args)
 
         {
-            LemonadeGame lemonadeGame = new LemonadeGame();
-            lemonadeGame.GameRules();
+            //LemonadeGame lemonadeGame = new LemonadeGame();
+            //lemonadeGame.GameRules();
 
-            Store store = new Store();
+            //Store store = new Store();
 
-            Player player = new Player();
+            //Player player = new Player();
 
-            Inventory inventory = new Inventory(store);
+            //Inventory inventory = new Inventory();
+
+            Day day = new Day();
+            day.DayOfWeek();
+            //Weather weather = new Weather();
+           // weather.WeatherForecast();
+            
 
         
 
-            player.StartingAmount(store);
+            //player.StartingAmount(store);
         
-            store.StoreItems(player);
+            //store.StoreItems(player);
+            
 
          
 

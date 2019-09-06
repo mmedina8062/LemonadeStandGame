@@ -27,18 +27,20 @@ namespace LemonadeStand
 
         public Player()
         {
-            this.inventory = Inventory.inventory;  
-          
+            inventory = new Inventory();
+            
+
 
         }
 
-        public int StartingAmount(Store store)
+        public void StartingAmount()
         {
             string StartingAmount = 25.ToString("C");
-
-            return store.Lemons + store.Sugar + store.Cups + store.IceCubes;
+            Console.WriteLine(StartingAmount); 
             
         }
+
+        
 
         
 

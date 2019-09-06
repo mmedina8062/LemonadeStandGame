@@ -22,27 +22,13 @@ namespace LemonadeStand
             }
         }
 
-        public Inventory(Store store)
+        public Inventory()
         {
-            this.Lemons = 0 + store.Lemons;
-            this.Sugar = 0 + store.Sugar;
-            this.Cups = 0 + store.Cups;
-            this.IceCubes = 0 + store.IceCubes;
+            this.Lemons = 0;
+            this.Sugar = 0;
+            this.Cups = 0;
+            this.IceCubes = 0;
 
-        }
-        //public int PlayerInventory(int Lemon, int Sugar, int Cups, int IceCubes)
-        //{
-            //create a list and add int to it?
-            //string[] PlayerInventory = new string[4] { "Lemon", "Sugar", "Cups", "Ice Cubes" };
-            //Console.WriteLine(Lemon += );
-       
-       //public int BoughtInventory(Player inventory)
-        //{
-            
-        //}
-            
-            
-            
-        
+        } 
     }
 }
