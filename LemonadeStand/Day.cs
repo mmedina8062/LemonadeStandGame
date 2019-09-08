@@ -22,17 +22,20 @@ namespace LemonadeStand
             
         }
 
-        public void DayOfWeek()
+        public string DayOfWeek()
         {
             List<string> DayOfWeek = new List<string> { "Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7" };
 
             foreach (string day in DayOfWeek)
             {
-                Console.WriteLine(day);
+                Console.WriteLine(day + weather.weather);
 
-                for (DayOfWeek == "Day 1")
+             
 
             }
+            return DayOfWeek + weather.weather;
+
+            
         }
     }
 

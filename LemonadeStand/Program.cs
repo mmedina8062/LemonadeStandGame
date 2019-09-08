@@ -20,10 +20,12 @@ namespace LemonadeStand
 
             //Inventory inventory = new Inventory();
 
-            Day day = new Day();
-            day.DayOfWeek();
-            //Weather weather = new Weather();
-           // weather.WeatherForecast();
+            Weather weather = new Weather();
+
+            //Day day = new Day();
+            //day.DayOfWeek();
+            
+            weather.GenerateWeather();
             
 
         
