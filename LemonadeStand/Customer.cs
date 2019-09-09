@@ -25,7 +25,9 @@ namespace LemonadeStand
             this.customer = 0;
         }
 
-        public abstract bool BuyLemonade(Day day);
+        public abstract bool BuyLemonadeBasedOnWeather(Day day);
+
+        public abstract bool BuyLemonadeBasedOnIngredients(Day day);
         
             
 

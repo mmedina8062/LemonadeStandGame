@@ -3,31 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-//namespace LemonadeStand
-//{
-    /*public class CustomerClassOne : Customer()
+namespace LemonadeStand
+{
+    public class CustomerClassOne : Customer
     {
         public Customer Customer
         {
             get => default;
             set
             {
-            }
-        }
-*/
 
-        /*public override bool BuyLemonade(Day day)
+            }
+
+
+        }
+
+
+        public CustomerClassOne()
+        {
+
+        }
+
+        public override bool BuyLemonadeBasedOnWeather(Day day)
         {
 
             if (day.weather.temperature == 97 || day.weather.temperature > 60)
             {
-                int Customer = [20, 100];
-                return true;
 
-                    //if (day.RecipeAndPrice.Lemons == 4 )
+                return true;
             }
-            re*/
-            
-//        }
-    //}
-//}*
+            return true;
+
+        }
+
+        public override bool BuyLemonadeBasedOnIngredients(Day day)
+        {
+            if (day.Lemons == 5 || day.Lemons > 3)
+            {
+                return true;
+            }
+            return true;
+        }
+
+    }
+}

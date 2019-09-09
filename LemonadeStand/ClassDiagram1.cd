@@ -20,7 +20,7 @@
   <Class Name="LemonadeStand.Day">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAIAAAAAAAAAAAAAAAAAAABAAAACAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAQgAIAAAIAAAAAAAAAAAAAAABAAAACAAAAEAAAAEAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -40,7 +40,7 @@
   <Class Name="LemonadeStand.Player">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAACAAAAAAAAAgAAAAAAAAAACBAAACCAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAACBAAACCAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -67,24 +67,24 @@
       <Property Name="LemonadeGame" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="LemonadeStand.CustomerClassOne">
-    <Position X="0.5" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CustomerClassOne.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Customer" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="LemonadeStand.Customer">
     <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAABIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAQBIAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Day" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LemonadeStand.CustomerClassOne">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomerClassOne.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />

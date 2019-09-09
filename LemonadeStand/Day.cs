@@ -9,6 +9,10 @@ namespace LemonadeStand
     {
         public Weather weather;
         public string day;
+        public int Lemons;
+        public int Sugar;
+        //public int Cups;
+        public int IceCubes;
         public LemonadeGame LemonadeGame
         {
             get => default;
@@ -19,47 +23,55 @@ namespace LemonadeStand
 
         public Day()
         {
-            weather = new Weather();
-            //weather.GenerateWeather();
-            //weather.GenerateTemperature();
+            //weather = new Weather();
+            
             this.day = "";
-                      
-            
+            this.Lemons = LemonadeGame.player.inventory.Lemons;
+            this.Sugar = LemonadeGame.player.inventory.Sugar;
+            this.IceCubes = LemonadeGame.player.inventory.IceCubes;
 
-            
+
+
+
         }
 
-        public void RecipeAndPrice()
+        public int RecipeAndPrice(int Lemons, int Sugar, int Cups, int IceCubes)
         {
-            string[]ingridents = new string[] { "Lemons", "Sugar", "Ice Cubes", "Cups" };
+            string[] ingredients = new string[] { "Lemons", "Sugar", "Ice Cubes", "Cups" };
 
-            for (int i = 0; i <= ingridents.Length; i++)
+            for (int i = 0; i <= ingredients.Length; i++)
             {
-                if (ingridents[i] == "Lemons")
+                if (ingredients[i] == "Lemons")
                 {
                     Console.WriteLine("Enter amount of Lemons per pitcher: ");
                     string UserInput = Console.ReadLine();
+                    return Lemons;
 
                 }
-                else if (ingridents[i] == "Sugar")
+                else if (ingredients[i] == "Sugar")
                 {
                     Console.WriteLine("Enter amount of Sugar per pitcher: ");
                     string UserInput = Console.ReadLine();
+                    return Sugar;
 
                 }
-                else if (ingridents[i] == "Ice Cubes")
+                else if (ingredients[i] == "Ice Cubes")
                 {
                     Console.WriteLine("Enter amount of Ice Cubes per Cup: ");
                     string UserInput = Console.ReadLine();
+                    return IceCubes;
 
                 }
-                else if (ingridents[i] == "Cups")
+                else if (ingredients[i] == "Cups")
                 {
                     Console.WriteLine("Enter price per Cup: ");
                     string UserInput = Console.ReadLine();
+                    return Cups;
 
                 }
             }
+            
+            return ingredients[i];
             
 
 

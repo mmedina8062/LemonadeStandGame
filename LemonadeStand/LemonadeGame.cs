@@ -8,8 +8,8 @@ namespace LemonadeStand
     public class LemonadeGame
     {
         
-        Player player;
-        Store store;
+        public Player player;
+        public Store store;
       
        
 
