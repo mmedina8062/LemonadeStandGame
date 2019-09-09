@@ -31,7 +31,7 @@ namespace LemonadeStand
 
             foreach (string day in DayOfWeek)
             {
-                Console.WriteLine(day && weather.weather);
+                Console.WriteLine(day + weather.weather);
 
       
 

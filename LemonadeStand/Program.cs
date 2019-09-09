@@ -16,17 +16,18 @@ namespace LemonadeStand
 
             //Store store = new Store();
 
-            //Player player = new Player();
+            Player player = new Player();
 
             //Inventory inventory = new Inventory();
 
-            Weather weather = new Weather();
+            // Weather weather = new Weather();
 
-            Day day = new Day();
-            
-            
-            weather.GenerateWeather(day);
-            day.DayOfWeek(weather);
+            //Day day = new Day();
+
+
+            //weather.GenerateWeather(day);
+            //day.DayOfWeek(weather);
+            player.RecipeAndPrice();
             
 
 
