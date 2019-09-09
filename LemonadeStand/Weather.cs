@@ -8,6 +8,7 @@ namespace LemonadeStand
     public class Weather
     {
         public string weather;
+        public int temperature;
         
         
         
@@ -21,15 +22,15 @@ namespace LemonadeStand
 
         public Weather()
         {
-            this.weather = ""; 
+            
 
         }
-            
+ 
           
 
-        public string GenerateWeather(Day day)
+        public string GenerateWeather()
         {
-            List<string> weather = new List<string> { "Rainy", "Sunny", "Cloudy", "Windy", "Cloudy & Windy", "Sunny & Windy" }; ;
+            List<string> weather = new List<string> { "Rainy", "Sunny", "Cloudy", "Windy", "Cloudy & Windy", "Sunny & Windy", "Rainy & Cloudy", "Rainy & Sunny" }; 
             Random r = new Random();
             int index = r.Next(weather.Count);
             string randomString = weather[index];
@@ -38,6 +39,16 @@ namespace LemonadeStand
 
             return randomString;
 
+        }
+
+        public int GenerateTemperature()
+        {
+            Random rnd = new Random();
+            int Degrees = rnd.Next(50, 100);
+            Console.WriteLine(Degrees);
+            Console.ReadLine();
+
+            return Degrees;
         }
 
     }

@@ -51,6 +51,10 @@ namespace LemonadeStand
                     GetBuyIceCubes(player);
                     player.inventory.IceCubes += 100;
                     break;
+                default:
+                    Console.WriteLine("Please choose from ingridents listed");
+                    break;
+
                     
 
             }
@@ -80,7 +84,7 @@ namespace LemonadeStand
 
         public int GetBuySugar(Player player)
         {
-            Console.WriteLine("Choose amount of Sugar to purchase: 20 lbs = $1.50, 45 lbs = $2.50, 75 lbs = $3.50");
+            Console.WriteLine("Choose amount of Sugar to purchase: 10 cups = $1.50, 35 cups = $2.50, 50 cups = $3.50");
             string UserInput = Console.ReadLine();
 
             if (UserInput == "")

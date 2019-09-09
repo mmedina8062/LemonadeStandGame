@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerClassOne.cs" />
     <Compile Include="Day.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="LemonadeGame.cs" />

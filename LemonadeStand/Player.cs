@@ -9,9 +9,9 @@ namespace LemonadeStand
     {
 
         int PickSellDay;
-        int PriceForLemonade;
+        
         //TODO: calculator to add money made from sales and incorporate that to add with StartingAmount
-        int ingridentsControl;
+        
         public int startingAmount;
         public Inventory inventory;
 
@@ -30,7 +30,7 @@ namespace LemonadeStand
         {
             inventory = new Inventory();
             this.PickSellDay = 7;
-            //this.startingAmount = 25.ToString("C"); //change string to int
+            this.startingAmount = 25;//25.ToString("C2"); //change string to int
 
 
 
@@ -38,60 +38,14 @@ namespace LemonadeStand
 
 
 
-        //public int Wallet()
-        //{
-            //string StartingAmount = 25.ToString("C");
-            //Console.WriteLine(StartingAmount);
-
-        //}
-        public void RecipeAndPrice()
+        public int Wallet()
         {
-            string[] ingridents = new string[] { "Lemons", "Sugar", "Ice Cubes", "Cups" };
+            int WalletAmount = 25;//25.ToString("C2");
+            Console.WriteLine(WalletAmount);
 
-            for (int i = 0; i <= ingridents.Length; i++)
-            {
-                if (ingridents[i] == "Lemons")
-                {
-                    Console.WriteLine("Enter amount of Lemons per pitcher: ");
-                    string UserInput = Console.ReadLine();
-                    
-                }
-                else if (ingridents[i] == "Sugar")
-                {
-                    Console.WriteLine("Enter amount of Sugar per pitcher: ");
-                    string UserInput = Console.ReadLine();
-                    
-                }
-                else if (ingridents[i] == "Ice Cubes")
-                {
-                    Console.WriteLine("Enter amount of Ice Cubes per Cup: ");
-                    string UserInput = Console.ReadLine();
-
-                }
-                else if (ingridents[i] == "Cups")
-                {
-                    Console.WriteLine("Enter price per Cup: ");
-                    string UserInput = Console.ReadLine();
-
-                }
-            }
-            
-
-            //TODO: create a calculator to subtract amount customer purchase from inventory
-            
-            //Console.WriteLine("Amount of Lemons: ");
-            //string UserInput = Console.ReadLine();
-
-           // if (UserInput == "")
-            //{
-                //Console.WriteLine(inventory.Lemons - int.Parse(UserInput));
-
-            //}
-
-            
-
-            
+            return WalletAmount;
 
         }
+
     }
 }

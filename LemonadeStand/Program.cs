@@ -14,20 +14,23 @@ namespace LemonadeStand
             //LemonadeGame lemonadeGame = new LemonadeGame();
             //lemonadeGame.GameRules();
 
-            //Store store = new Store();
+            Store store = new Store();
 
             Player player = new Player();
 
             //Inventory inventory = new Inventory();
 
-            // Weather weather = new Weather();
+            //Weather weather = new Weather();
 
-            //Day day = new Day();
+            Day day = new Day();
+            day.DayOfWeek();
 
 
-            //weather.GenerateWeather(day);
-            //day.DayOfWeek(weather);
-            player.RecipeAndPrice();
+            //weather.GenerateWeather();
+            
+            //player.RecipeAndPrice();
+
+            //weather.GenerateTemperature();
             
 
 
@@ -36,7 +39,7 @@ namespace LemonadeStand
 
             //player.StartingAmount(store);
 
-            //store.StoreItems(player);
+            store.StoreItems(player);
 
 
 
