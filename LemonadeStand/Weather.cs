@@ -21,13 +21,13 @@ namespace LemonadeStand
 
         public Weather()
         {
-           
+            this.weather = ""; 
 
         }
             
           
 
-        public string GenerateWeather()
+        public string GenerateWeather(Day day)
         {
             List<string> weather = new List<string> { "Rainy", "Sunny", "Cloudy", "Windy", "Cloudy & Windy", "Sunny & Windy" }; ;
             Random r = new Random();

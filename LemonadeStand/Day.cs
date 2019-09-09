@@ -8,6 +8,7 @@ namespace LemonadeStand
     public class Day
     {
         public Weather weather;
+        public string day;
         public LemonadeGame LemonadeGame
         {
             get => default;
@@ -18,22 +19,25 @@ namespace LemonadeStand
 
         public Day()
         {
-            weather = new Weather();
+            
+            
+
             
         }
 
-        public string DayOfWeek()
+        public string DayOfWeek(Weather weather)
         {
             List<string> DayOfWeek = new List<string> { "Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7" };
 
             foreach (string day in DayOfWeek)
             {
-                Console.WriteLine(day + weather.weather);
+                Console.WriteLine(day && weather.weather);
 
-             
+      
+
 
             }
-            return DayOfWeek + weather.weather;
+            return day;
 
             
         }

@@ -22,23 +22,26 @@ namespace LemonadeStand
 
             Weather weather = new Weather();
 
-            //Day day = new Day();
-            //day.DayOfWeek();
+            Day day = new Day();
             
-            weather.GenerateWeather();
+            
+            weather.GenerateWeather(day);
+            day.DayOfWeek(weather);
             
 
-        
+
+
+
 
             //player.StartingAmount(store);
-        
+
             //store.StoreItems(player);
-            
 
-         
 
-            
-            
+
+
+
+
         }
     }
 }

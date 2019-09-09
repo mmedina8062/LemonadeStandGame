@@ -73,7 +73,7 @@ namespace LemonadeStand
 
                 Console.WriteLine(AmountOfMoneyLeft);               
             }
-            Console.WriteLine();
+            Console.WriteLine(Lemons);
             return Lemons;
 
         }
