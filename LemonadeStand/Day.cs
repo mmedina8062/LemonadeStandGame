@@ -11,7 +11,7 @@ namespace LemonadeStand
         public string day;
         public int Lemons;
         public int Sugar;
-        //public int Cups;
+        public int pricePerCup;
         public int IceCubes;
         public LemonadeGame LemonadeGame
         {
@@ -35,7 +35,7 @@ namespace LemonadeStand
 
         }
 
-        public int RecipeAndPrice(int Lemons, int Sugar, int Cups, int IceCubes)
+        public int RecipeAndPrice(int Lemons, int Sugar, int pricePerCup, int IceCubes)
         {
             string[] ingredients = new string[] { "Lemons", "Sugar", "Ice Cubes", "Cups" };
 
@@ -66,13 +66,13 @@ namespace LemonadeStand
                 {
                     Console.WriteLine("Enter price per Cup: ");
                     string UserInput = Console.ReadLine();
-                    return Cups;
+                    return pricePerCup;
 
                 }
             }
-            
-            return ingredients[i];
-            
+
+            return ingredients[];
+             
 
 
             //TODO: create a calculator to subtract amount customer purchase from inventory

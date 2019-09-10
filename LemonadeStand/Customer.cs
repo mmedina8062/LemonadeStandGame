@@ -9,7 +9,7 @@ namespace LemonadeStand
     {
         //TODO: Maybe put recipe in customer class
         public int buyLemonade;
-        public int customer;
+        public int customers;
 
         public Day Day
         {
@@ -22,12 +22,17 @@ namespace LemonadeStand
         public Customer()
         {
             this.buyLemonade = 0;
-            this.customer = 0;
+            this.customers = 0;
+            
         }
 
-        public abstract bool BuyLemonadeBasedOnWeather(Day day);
+        public abstract int BuyLemonadeBasedOnTemperature(Day day);
 
-        public abstract bool BuyLemonadeBasedOnIngredients(Day day);
+        public abstract int BuyLemonadeBasedOnWeather(Day day);
+
+        public abstract int BuyLemonadeBasedOnIngredients(Day day);
+
+        public abstract int PriceOfLemonade(Day day);
         
             
 
