@@ -12,7 +12,7 @@ namespace LemonadeStand
         
         //TODO: calculator to add money made from sales and incorporate that to add with StartingAmount
         
-        public int startingAmount;
+        public int WalletAmount;
         public Inventory inventory;
 
 
@@ -30,7 +30,7 @@ namespace LemonadeStand
         {
             inventory = new Inventory();
             this.PickSellDay = 7;
-            this.startingAmount = 25;//25.ToString("C2"); //change string to int
+            this.WalletAmount = 25;//25.ToString("C2"); //change string to int
 
 
 

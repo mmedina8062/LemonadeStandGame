@@ -52,4 +52,5 @@ namespace LemonadeStand
         }
     }
 
+    //TODO: create else if for all methods
 }

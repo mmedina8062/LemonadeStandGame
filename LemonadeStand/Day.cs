@@ -35,7 +35,7 @@ namespace LemonadeStand
 
         }
 
-        public int RecipeAndPrice(int Lemons, int Sugar, int pricePerCup, int IceCubes)
+        public void RecipeAndPrice(int Lemons, int Sugar, int pricePerCup, int IceCubes)
         {
             string[] ingredients = new string[] { "Lemons", "Sugar", "Ice Cubes", "Cups" };
 
@@ -45,33 +45,34 @@ namespace LemonadeStand
                 {
                     Console.WriteLine("Enter amount of Lemons per pitcher: ");
                     string UserInput = Console.ReadLine();
-                    return Lemons;
+                    //TODO: subtract amount from iventory
+                    
 
                 }
                 else if (ingredients[i] == "Sugar")
                 {
                     Console.WriteLine("Enter amount of Sugar per pitcher: ");
                     string UserInput = Console.ReadLine();
-                    return Sugar;
+                    
 
                 }
                 else if (ingredients[i] == "Ice Cubes")
                 {
                     Console.WriteLine("Enter amount of Ice Cubes per Cup: ");
                     string UserInput = Console.ReadLine();
-                    return IceCubes;
+                    
 
                 }
                 else if (ingredients[i] == "Cups")
                 {
                     Console.WriteLine("Enter price per Cup: ");
                     string UserInput = Console.ReadLine();
-                    return pricePerCup;
+                   
 
                 }
             }
 
-            return ingredients[];
+            
              
 
 
@@ -79,8 +80,9 @@ namespace LemonadeStand
 
         }
 
-        public void DayOfWeek()
+        public string DayOfWeek()
         {
+            
             string[] DayOfWeek = new string[] { "Day One", "Day Two", "Day Three", "Day Four", "Day Five", "Day Six", "Day Seven" };
 
             for (int i = 0; i <= DayOfWeek.Length; i++)
@@ -121,13 +123,9 @@ namespace LemonadeStand
                     Console.WriteLine(DayOfWeek[i] + " " + "Weather: " + weather.GenerateWeather() + " " + "Temperature: " + weather.GenerateTemperature());
                     Console.ReadLine();
                 }
-                
-
-
-
-
 
             }
+            return day;
             
         }
 

@@ -47,5 +47,14 @@ namespace LemonadeStand
             return customers = 60;
         }
 
+        public override int PriceOfLemonade(Day day)
+        {
+            if (day.pricePerCup == 0.30 || day.pricePerCup > 0.10)
+            {
+                return customers = 50;
+            }
+            return customers = 50;
+        }
+
     }
 }

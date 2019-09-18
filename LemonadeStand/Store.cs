@@ -37,7 +37,7 @@ namespace LemonadeStand
             {    
                 case "Lemons":
                     GetBuyLemons(player);
-                    player.inventory.Lemons += 10;
+                    
                     break;
                 case "Sugar":
                     GetBuySugar(player);
@@ -67,15 +67,39 @@ namespace LemonadeStand
         public int GetBuyLemons(Player player)
         {
             
-            Console.WriteLine("Choose amount of Lemons to purchase: 10 = $1, 40 = $2, 65 = $3");
-            string UserInput = Console.ReadLine();  
+            Console.WriteLine("Choose amount of Lemons to purchase: (10) = $1, (40) = $2, (65) = $3 OR (4) return to buying menu");
+            int UserInput = Convert.ToInt32(Console.ReadLine());  
 
-            if (UserInput == "")
+            if (UserInput == 10)
             {
-                
-                int AmountOfMoneyLeft = player.startingAmount - int.Parse(UserInput);
+
+                int AmountOfMoneyLeft = player.WalletAmount - UserInput;
+                player.inventory.Lemons += UserInput;
 
                 Console.WriteLine(AmountOfMoneyLeft);               
+            }
+            else if (UserInput == 40)
+            {
+
+                int AmountOfMoneyLeft = player.WalletAmount - UserInput;
+
+                Console.WriteLine(AmountOfMoneyLeft);
+            }
+            else if (UserInput == 65)
+            {
+
+                int AmountOfMoneyLeft = player.WalletAmount - UserInput;
+
+                Console.WriteLine(AmountOfMoneyLeft);
+            }
+            else if (UserInput == 4)
+            {
+                StoreItems(player);
+            }
+            else
+            {
+                Console.WriteLine("Please choose from the options given");
+                GetBuyLemons(player);
             }
             Console.WriteLine(Lemons);
             return Lemons;
@@ -89,7 +113,7 @@ namespace LemonadeStand
 
             if (UserInput == "")
             {
-                int AmountOfMoneyLeft = player.startingAmount - int.Parse(UserInput);
+                int AmountOfMoneyLeft = player.WalletAmount - int.Parse(UserInput);
 
                 Console.WriteLine(AmountOfMoneyLeft);
             }
@@ -103,7 +127,7 @@ namespace LemonadeStand
 
             if (UserInput == "")
             {
-                int AmountOfMoneyLeft = player.startingAmount - int.Parse(UserInput);
+                int AmountOfMoneyLeft = player.WalletAmount - int.Parse(UserInput);
 
                 Console.WriteLine(AmountOfMoneyLeft);
             }
@@ -117,7 +141,7 @@ namespace LemonadeStand
 
             if (UserInput == "")
             {
-                int AmountOfMoneyLeft = player.startingAmount - int.Parse(UserInput);
+                int AmountOfMoneyLeft = player.WalletAmount - int.Parse(UserInput);
 
                 Console.WriteLine(AmountOfMoneyLeft);
             }

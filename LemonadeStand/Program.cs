@@ -23,7 +23,7 @@ namespace LemonadeStand
             //Weather weather = new Weather();
 
             Day day = new Day();
-            day.DayOfWeek();
+            //day.DayOfWeek();
 
 
             //weather.GenerateWeather();
